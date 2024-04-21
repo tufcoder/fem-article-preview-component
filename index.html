@@ -4,30 +4,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon-32x32.png">
 
     <title>Frontend Mentor | Article preview component</title>
+
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/media.css">
+
+    <script src="src/js/main.js" defer></script>
 </head>
 
 <body>
+    <main class="container">
+        <div class="content">
+            <img src="src/images/drawers.jpg" alt="illustration image">
 
-    Shift the overall look and feel by adding these wonderful
-    touches to furniture in your home
+            <div class="content-wrapper">
+                <h1 class="title">
+                    Shift the overall look and feel by adding these wonderful
+                    touches to furniture in your home
+                </h1>
 
-    Ever been in a room and felt like something was missing? Perhaps
-    it felt slightly bare and uninviting. I’ve got some simple tips
-    to help you make any room feel complete.
+                <p class="description">
+                    Ever been in a room and felt like something was missing? Perhaps
+                    it felt slightly bare and uninviting. I’ve got some simple tips
+                    to help you make any room feel complete.
+                </p>
 
-    Michelle Appleton
-    28 Jun 2020
+            </div>
+            <div class="avatar">
+                <div class="avatar-info">
+                    <img src="src/images/avatar-michelle.jpg" alt="michelle avatar image">
 
-    Share
+                    <div>
+                        <p>Michelle Appleton</p>
+                        <p>28 Jun 2020</p>
+                    </div>
+                </div>
 
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+                <div class="avatar-share hidden">
+                    <p>Share</p>
+                    <img src="src/images/icon-facebook.svg" alt="facebook share icon">
+                    <img src="src/images/icon-twitter.svg" alt="twitter share icon">
+                    <img src="src/images/icon-pinterest.svg" alt="pinterest share icon">
+                </div>
+
+                <button class="button-share">
+                    <svg id="share" xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+                        <path fill="#6E8098"
+                            d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/tufcoder" target="_blank">Oswaldo Castro</a>.
+        </div>
+    </footer>
 </body>
 
 </html>

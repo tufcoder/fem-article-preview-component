@@ -1,8 +1,164 @@
+:root {
+    --veryDarkGrayishBlue: #48556a;
+    --desaturatedDarkBlue: #6d7f97;
+    --grayishBlue: #9eafc2;
+    --lightGrayishBlue: #ecf2f8;
+    --white: #FFF;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    /* 13px */
+    font-size: 0.8125rem;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    color: var(--desaturatedDarkBlue);
+    background-color: var(--lightGrayishBlue);
+}
+
+.container {
+    /* 320px */
+    min-width: 20rem;
+    /* 400px */
+    max-width: 25rem;
+    margin: 10rem auto;
+    padding: 0 1rem;
+}
+
+.content {
+    /* 8px */
+    border-radius: .5rem;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.content img {
+    display: block;
+}
+
+.content-wrapper {
+    padding: 2.5rem 2rem 1rem;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--veryDarkGrayishBlue);
+}
+
+.title,
+.description {
+    margin-block-end: 1rem;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+.avatar-info {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.avatar-info img {
+    /* 48px */
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.avatar-info div p {
+    color: var(--grayishBlue);
+}
+
+.avatar-info div p:first-child {
+    margin-block-end: .25rem;
+    font-weight: 700;
+    color: var(--veryDarkGrayishBlue);
+}
+
+.avatar-share {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatar-share p {
+    text-transform: uppercase;
+    /* 8px */
+    letter-spacing: .5rem;
+}
+
+.button-share {
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.share {
+    background-color: var(--veryDarkGrayishBlue);
+}
+
+.button-share-active {
+    background-color: var(--desaturatedDarkBlue);
+}
+
+.button-share-active svg path {
+    fill: var(--lightGrayishBlue);
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
 .attribution {
-    font-size: 11px;
+    /* 11px */
+    font-size: .6875rem;
     text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+    /* 14px */
+    font-size: .875rem;
+    font-weight: 700;
+    font-family: inherit;
+    color: var(--veryDarkGrayishBlue);
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: inherit;
 }
