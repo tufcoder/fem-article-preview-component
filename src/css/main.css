@@ -24,10 +24,6 @@ img {
     block-size: auto;
 }
 
-button {
-    cursor: pointer;
-}
-
 body {
     /* 13px */
     font-size: 0.8125rem;
@@ -115,9 +111,15 @@ body {
 }
 
 .button-share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
     padding: 1rem;
-    text-align: center;
+    cursor: pointer;
+    background-color: var(--lightGrayishBlue);
 }
 
 .share {
